@@ -1,0 +1,160 @@
+body {
+  font-family: 'Georgia', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: #754848;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: rgb(252, 247, 247);
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.imagen-cafe {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.imagen-cafe img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.bienvenida {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffe0ec; 
+  font-family: 'Georgia', serif;
+  color: #5c1a1a; 
+}
+
+.bienvenida h2 {
+  font-size: 32px;
+  color: #6f0511; 
+  margin-bottom: 10px;
+}
+ 
+
+.productos-grid {
+  background-color: #fbe9ec;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin-top: 10px;
+  color: #7a2b2b;
+}
+
+
+.cuadro-rosada {
+  text-align: center;
+  padding: 20px;
+  background-color: #8e3b4e;
+  scroll-margin-top: 80px;}
+
+  .seccion-menu {
+  background-color: #ffe6f0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-menu h2 {
+  font-size: 2rem;
+  color: #c94f7c;
+
+}
+.oculto {
+  display: none;
+}
+.imagenn {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #890c0c;
+  border-radius: 5px;
+}
+
+.formulario-contacto button {
+  background-color: #0a050f;
+  color: rgb(219, 95, 157);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#mensaje-exito {
+  margin-top: 10px;
+  color: rgb(246, 173, 230);
+  font-weight: bold;
+}
+
+
+.interaccion-dom {
+  text-align: center;
+  margin: 30px;
+}

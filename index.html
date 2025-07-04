@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafetería Dulce Estación</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- aqui conecte el archivo JS para que funcionen los botones y el formulario -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Cafetería Dulce Estación</h1>
+      <p>Tu lugar favorito para disfrutar un café</p>
+
+      <!-- en esta parte tengo los botones que muestran las secciones utilizando JS -->
+      <button class="btn" onclick="verProductos()">Ver productos</button>
+      <button class="btn" onclick="verUbicacion()">Ubicación</button>
+      <button class="btn" onclick="verContacto()">Contáctanos</button>
+    </div>
+  </header>
+
+  <section class="bienvenida">
+    <h2>Bienvenidos a Cafetería Dulce Estación</h2>
+    <p>Explora nuestros productos elaborados con amor. Sabores únicos para momentos especiales.</p>
+  </section>
+
+
+  <section class="imagen-cafe">
+    <img src="https://i.pinimg.com/736x/d3/74/85/d374851dcb6d3cc92269f8ad02caffc2.jpg" alt="Taza de café" />
+    <img src="https://i.pinimg.com/736x/2f/67/9a/2f679ad8c29d6b749d63c73798e22667.jpg" alt="Taza de café" />
+    <img src="https://i.pinimg.com/736x/d3/74/85/d374851dcb6d3cc92269f8ad02caffc2.jpg" alt="Taza de café" />
+  </section>
+
+  <!-- al hacer click en "Ver productos"se mostrara esta parte -->
+  <section id="productos" class="productos-grid oculto">
+    <h2>Nuestros productos</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/cd/8f/fd/cd8ffd12f741e65780000881ae53f867.jpg" alt="Sandiwch" />
+        <h3>Croissant</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/e4/7b/53/e47b53bcb1a2fd4c17797a19aba368da.jpg" alt="Café Capuccino" />
+        <h3>Café Capuccino</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/6f/ef/ea/6fefead2a21830dc9337a45f72b0e824.jpg" alt="Galletas" />
+        <h3>Galletas</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/9c/40/31/9c4031e407d38298eeb3733b21a241f4.jpg" alt="Donuts" />
+        <h3>Donuts</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/25/b7/60/25b7601509eba304d68f53e5a5ac74d8.jpg" alt="Torta" />
+        <h3>Torta</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/c5/70/00/c570001e85375796dfc1b09184f806e0.jpg" alt="Pie" />
+        <h3>Pie de Limón</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/a5/8d/52/a58d52e58145b1e6f1be20b1447c7c24.jpg" alt="Cafe" />
+        <h3>Café Americano</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/e9/44/0f/e9440fa2992273b617cb04f37dfa8581.jpg" alt="Wafle" />
+        <h3>Wafles</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/27/77/09/27770967b300fc7ad9de871146ce1d6f.jpg" alt="Cafehelado" />
+        <h3>Café Helado</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/16/f7/16/16f716a56ff71f715b420e14d89457ea.jpg" alt="Queque" />
+        <h3>Trozo de Queque</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/4e/a6/83/4ea6838737a3d2beb67008abb645db7f.jpg" alt="Jugos" />
+        <h3>Jugos Naturales</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/c2/cf/af/c2cfafad650dc4bdf4a9c11dd6912aba.jpg" alt="Medialunas" />
+        <h3>Medialunas</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/55/76/2d/55762da024203a9cf2c6dae55977c735.jpg" alt="Chocolate" />
+        <h3>Chocolate Caliente</h3>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/61/ec/ae/61ecae5fc11c81174ecb3d5206ee070b.jpg" alt="Tostadas" />
+        <h3>Tostadas Francesas</h3>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="seccion-menu">
+    <h2>Revisa nuestra carta completa</h2>
+    <img src="https://i.pinimg.com/736x/9d/9e/50/9d9e50304fc1de63d7a539a8a775413c.jpg" alt="Menú de Café Promise" class="imagenn" />
+  </section>
+
+  <!-- esta parte esta la ubicación -->
+  <section class="cuadro-rosada oculto" id="ubicacion">
+    <h2>¡Endulza tu día!</h2>
+    <p>Descubre nuestras especialidades más dulces hechas con amor 💕</p>
+    <p>Ubícanos en Palacio Orrego 678</p>
+    <h2>Lunes a Domingo de 09:00 a 22:00 hrs</h2>
+    <h3>Síguenos en nuestras redes</h3>
+    <img src="https://i.pinimg.com/736x/32/f3/b3/32f3b322b723bfd325ee5de89a8f0447.jpg" alt="Instagram" class="imagenn" />
+  </section>
+
+  <!-- En esta poarte esta el Formulario para contacto ocupando JS -->
+  <section class="formulario-contacto oculto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formContacto">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="email" id="correo" placeholder="Correo electrónico" required />
+      <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Aquí podemoss ver el mensaje de éxito cuando el cliente envía el formulario -->
+    <div id="mensaje-exito"></div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Café Dulce Tentación. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
